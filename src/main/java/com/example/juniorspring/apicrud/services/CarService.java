@@ -1,6 +1,8 @@
 package com.example.juniorspring.apicrud.services;
 
 import com.example.juniorspring.apicrud.entities.CarEntity;
+import com.example.juniorspring.apicrud.entities.CarImage;
+import com.example.juniorspring.apicrud.wrappers.CarImageWrapper;
 import org.springframework.stereotype.Component;
 import java.util.List;
 
@@ -15,4 +17,6 @@ public interface CarService {
     CarEntity apdetCar(CarEntity param);
 
     String hapusCar(int id);
+
+    CarImage upload(CarImageWrapper ciw);
 }

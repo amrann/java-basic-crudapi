@@ -1,8 +1,11 @@
 com/example/juniorspring/apicrud/controllers/CarCtrl.class
 com/example/juniorspring/apicrud/repositories/CarRepository.class
 com/example/juniorspring/apicrud/responses/CommonResponseGenerator.class
+com/example/juniorspring/apicrud/wrappers/CarImageWrapper.class
+com/example/juniorspring/apicrud/repositories/CarImageRepository.class
 com/example/juniorspring/apicrud/ApicrudApplication.class
 com/example/juniorspring/apicrud/entities/CarEntity.class
+com/example/juniorspring/apicrud/entities/CarImage.class
 com/example/juniorspring/apicrud/services/CarService.class
 com/example/juniorspring/apicrud/services/CarServiceImpl.class
 com/example/juniorspring/apicrud/responses/CommonResponse.class
