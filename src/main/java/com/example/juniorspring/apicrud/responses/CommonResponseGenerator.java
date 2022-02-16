@@ -9,7 +9,13 @@ public class CommonResponseGenerator<T> {
         cr.setStatus("200");
         cr.setPesan(msg);
         cr.setDatas(datas);
-
         return cr;
+    }
+
+    public <T> CommonResponse<T> failedResponse(String msg) {
+        CommonResponse failCr = new CommonResponse<>();
+        failCr.setStatus("500");
+        failCr.setPesan(msg);
+        return failCr;
     }
 }

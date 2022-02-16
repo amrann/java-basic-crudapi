@@ -30,7 +30,12 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public CarEntity apdetCar(CarEntity param) {
-        return carRepository.save(param);
+        CarEntity findCar = carRepository.findById(param.getId()).get();
+        findCar.setCarName(param.getCarName());
+        findCar.setColor(param.getColor());
+        findCar.setNumber(param.getNumber());
+        findCar.setTipe(param.getTipe());
+        return carRepository.save(findCar);
     }
 
     @Override

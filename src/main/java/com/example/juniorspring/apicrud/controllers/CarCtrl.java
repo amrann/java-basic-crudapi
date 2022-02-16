@@ -27,31 +27,51 @@ public class CarCtrl {
 
     @PostMapping(value = "tambahNewCar")
     public CommonResponse<CarEntity> addNewCar(@RequestBody CarEntity param) {
-        CarEntity cr = carService.tambahCar(param);
-        return comResGen.suksesResponse(cr, "Berhasil menambah data");
+        try{
+            CarEntity cr = carService.tambahCar(param);
+            return comResGen.suksesResponse(cr, "Berhasil menambah data");
+        } catch (Exception e) {
+            return comResGen.failedResponse(e.getMessage());
+        }
     }
 
     @GetMapping(value = "getAllCar")
     public CommonResponse<List<CarEntity>> getAllCar() {
-        List<CarEntity> carList = carService.getAllData();
-        return comResGen.suksesResponse(carList, "Berhasil menampilkan semua data");
+        try {
+            List<CarEntity> carList = carService.getAllData();
+            return comResGen.suksesResponse(carList, "Berhasil menampilkan semua data");
+        } catch (Exception e) {
+            return comResGen.failedResponse(e.getMessage());
+        }
     }
 
     @GetMapping(value = "getById")
     public CommonResponse<CarEntity> getById(@RequestParam int id) {
-        CarEntity carById = carService.getCarById(id);
-        return comResGen.suksesResponse(carById, "Berhasil menampilkan data");
+        try {
+            CarEntity carById = carService.getCarById(id);
+            return comResGen.suksesResponse(carById, "Berhasil menampilkan data");
+        } catch (Exception e) {
+            return comResGen.failedResponse(e.getMessage());
+        }
     }
 
     @PostMapping(value = "apdetCar")
     public CommonResponse<CarEntity> updateCar(@RequestBody CarEntity param) {
-        CarEntity carApdet = carService.apdetCar(param);
-        return comResGen.suksesResponse(carApdet, "Berhasil edit data");
+        try {
+            CarEntity carApdet = carService.apdetCar(param);
+            return comResGen.suksesResponse(carApdet, "Berhasil edit data");
+        } catch (Exception e) {
+            return comResGen.failedResponse(e.getMessage()+ " for id: "+param.getId());
+        }
     }
 
     @GetMapping(value = "deletCar")
     public CommonResponse<String> deleteCar(@RequestParam int id) {
-        String carHapus = carService.hapusCar(id);
-        return comResGen.suksesResponse(carHapus, "Berhasil hapus data");
+        try {
+            String carHapus = carService.hapusCar(id);
+            return comResGen.suksesResponse(carHapus, "Berhasil hapus data");
+        } catch (Exception e) {
+            return comResGen.failedResponse(e.getMessage());
+        }
     }
 }
