@@ -1,10 +1,12 @@
 package com.example.juniorspring.apicrud.entities;
 
+import com.example.juniorspring.apicrud.audit.AuditableBase;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="car_image")
-public class CarImage {
+public class CarImage extends AuditableBase {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;

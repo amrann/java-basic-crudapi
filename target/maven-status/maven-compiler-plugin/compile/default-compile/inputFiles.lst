@@ -1,3 +1,12 @@
 /Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/repositories/CarRepository.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/audit/AuditableBase.java
 /Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/ApicrudApplication.java
 /Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/entities/CarEntity.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/repositories/CarImageRepository.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/responses/CommonResponseGenerator.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/controllers/CarCtrl.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/services/CarService.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/wrappers/CarImageWrapper.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/responses/CommonResponse.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/services/CarServiceImpl.java
+/Users/meran/e-Learning/java/spring/udemy-ananda/src/main/java/com/example/juniorspring/apicrud/entities/CarImage.java
